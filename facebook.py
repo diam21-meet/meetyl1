@@ -30,11 +30,34 @@ Sam.post('hello')
 Jack.getuser_info()
 Sam.getuser_info()
 class Post():
-	def __init__(self,name,email,text):
+	def __init__(self,name,email,text, comment,like,status):
 		self.name=name
 		self.email=email
 		self.text=text
 		self.post_list=[]
+		self.comment=comment
+		self.like=like
+		self.status=status
 	def post(self):
 		self.posts_list.append(text)
 		print(self.name + " has posted " + text)
+class Comment(Post):
+	comment_list=[]
+	def comment(self):
+		self.comment_list.append(comment)
+		print(self.name + " has commented " + comment)
+class Like(Post):
+	like_list=[]
+	def like(self):
+		self.like_list.append(like)
+		print(self.name + "has liked " + post)
+class Status(Post):
+	status_list=[]
+	def status(self):
+		self.status_list.append(status)
+		print(self.name + " : " + status)
+
+
+		
+
+
