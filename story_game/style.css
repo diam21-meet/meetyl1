@@ -1,0 +1,19 @@
+
+#content{
+	text-align: center;
+	color: white;
+	font-size: 60px;
+}
+body{
+	background-color: black; 
+}
+button {
+  background-color: white; /* Green */
+  border: none;
+  color: purple;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}

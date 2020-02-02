@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Poison</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+
+		//b1 done
+		function update() {
+			var hospital=document.createElement("P");
+			hospital.innerHTML="The hospital is cramped and nurse's were rushing around hysterically. A nurse comes up to me and asks me if I need help. I nodded and showed her my purple arms. A gasp escaped her lips as she rushed me to a room. 'How long has this been happening?' 'About a week.' The nurse looked at my hands and shook her head. 'I'm not sure what this is...' she said looking at my arms, 'but this should help.' She handed me a bottle of white ointment";
+			hospital.id="hospital";
+			document.getElementById("content").replaceChild(hospital, document.getElementById("idk"));
+			var hospitalbtn = document.getElementById("button1"); 
+			var btn3=document.getElementById("button3");
+			btn3.style.display="block";
+			hospitalbtn.parentNode.replaceChild(btn3, hospitalbtn);
+			var btn2=document.getElementById("button2");
+			var btn4=document.getElementById("button4");
+			btn4.style.display="block";
+			btn2.parentNode.replaceChild(btn4, btn2);
+		}
+		//done
+		function b3(){
+			var use=document.createElement("P")
+			use.innerHTML="I grabbed the ointment and quickly opened it. I dropped the cap to the floor and spilled a few drops into my purple arms. I felt a bit numb and then I quickly realized my hands were blistering. I screamed as I dropped the ointment onto the floor. The nurse came to help me and grabbed my hands under the sink.The water washed off the pain. The nurse scribbled off a name on a piece of paper. 'Here go to this address, he'll know what to do.' she said while shooing me out."
+			use.id="use";
+			document.getElementById("content").replaceChild(use, document.getElementById("hospital"));
+			var btn5=document.getElementById("button5");
+			var btn6=document.getElementById("button6");
+			var btn4=document.getElementById("button4");
+			var btn3=document.getElementById("button3");
+			btn5.style.display="block";
+			btn4.parentNode.replaceChild(btn5, btn4);
+			btn6.style.display="block";
+			btn3.parentNode.replaceChild(btn6, btn3);
+		}
+		//bt2 done
+		function updatw() {
+			var gina=document.createElement("P")
+			gina.innerHTML="I walked up to gina's door and banged as hard as I could, but no answer came out.";
+			document.getElementById("content").replaceChild(gina,document.getElementById("idk"));
+			var btn2 = document.getElementById("button2"); 
+			var btn1=document.getElementById("button1");
+			var btn7=document.getElementById("button7");
+			var btn8=document.getElementById("button8");
+			btn7.style.display="block";
+			btn1.parentNode.replaceChild(btn7, btn1);
+			btn8.style.display="block";
+			btn2.parentNode.replaceChild(btn8, btn2);
+		}
+		//done
+		function b4() {
+			var throwaway=document.createElement("P");
+			throwaway.innerHTML="I grabbed the bottle and threw it away. It seemed harmful. The nurse stared at me and walked out of the room. I stared at the wall while tears stained my cheecks. It was not as painful as I thought it would be, but I was still numbing pain. I stared at my arms as the purple and blue colour spread throughout my body. I closed my eyes and took one last breath, and then there was darkness.";
+			throwaway.id="throwaway";
+			document.getElementById("content").replaceChild(throwaway, document.getElementById("use"));
+			var btn3=document.getElementById("button3");
+			var btn4=document.getElementById("button4");
+			btn3.style.display="none";
+			btn4.style.display="none";
+		}
+		function b5() {
+			var goaddress=document.createElement("P");
+			goaddress.innerHTML="I went to the address the nurse gave me. It was in the middle of nowhere, I opened the door and walked through. A young man took one look at me and laughed. I stared in confusion as he grabbed a knife and slit my throat."
+			goaddress.id="goaddress";
+			document.getElementById("content").replaceChild(goaddress, document.getElementById("use"));
+			var btn6=document.getElementById("button6");
+			var btn5=document.getElementById("button5");
+			btn6.style.display="none";
+			btn5.style.display="none";
+		}
+	</script>
+
+</head>
+<body>
+	<div id="content">
+	<p id="idk">I rushed through the almost empty street as I winced in pain. I couldn't feel my fingers as they became more purple by the second. I didn't know what to do...</p>
+	<button id="button1" onclick="update()">go to the hospital</button>
+	<button id="button2" onclick="updatw()">Rush over to Gina</button>
+	<button id="button3" style="display:none" onclick="b3()">Use It</button>
+	<button id="button4" style="display:none" onclick="b4()">Throw the ointment away</button>
+	<button id="button5" style="display:none" onclick="b5()">Go to the address</button>
+	<button id="button6" style="display:none" onclick="b6()">Throw it away</button>
+	<button id="button7" style="display:none" onclick="b7()"> Go through the back door</button>
+	<button id="button8" style="display:none" onclick="b8()"> Knock harder</button>
+	</div>
+</body>
+</html>
